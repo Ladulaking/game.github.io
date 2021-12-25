@@ -117,4 +117,13 @@
 	padding: 5px;
 	/* border: 1px solid black; */
 }
-
+.d1,.d2,.d3{
+	width: 150px;
+	height: 200px;
+}
+.d1{
+	background-color: aquamarine;
+	position: absolute;
+	top:200px;
+	left:550px ;
+}
