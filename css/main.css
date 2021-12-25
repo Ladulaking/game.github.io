@@ -1,0 +1,120 @@
+#stage{
+	width: 441px;
+	height:764px;
+	margin: auto;
+	background-color: black;
+	color: white;
+	overflow: hidden;
+	position: relative;
+}
+/* 背景循环 */
+.bg1{
+	background-image:url(../img/img02.jpg);
+	height: 964px;
+	width: 100%;
+	position: absolute;
+	top: -200px;
+}
+.bg2{
+	background-image:url(../img/img02.jpg);
+	height: 964px;
+	width: 100%;
+	position: absolute;
+	top: -864px;
+}
+/* 我机 */
+.plane{
+	height:83px;
+	width: 97px;
+	background-image:url(../img/img07.png);
+	background-size: 100%100%;/*改变飞机的高,宽*/
+	position: absolute;
+	bottom: 0;
+	z-index: 999;
+}
+/* 敌机 */
+.enemy{
+	width:85px;
+	height:95px;
+	background-size: 100%100%;/*改变敌机的高，宽*/
+}
+.enemy1{
+	background-image:url(../img/enemy05.png); /*"../代表根目录"*/
+	position:absolute ;
+}
+.enemy2{
+	background-image: url(../img/enemy06.png);
+	position:absolute ;
+	left:120px;
+}
+.enemy3{
+	background-image: url(../img/enemy03.png);
+	position:absolute ;
+	left:250px;
+}
+.enemy4{
+	background-image: url(../img/enemy04.png);
+	position:absolute ;
+	left:350px;
+}
+/* 子弹 */
+.bullet{
+	width: 30px;
+	height:50PX;
+	position: absolute;
+	background-image:url(../img/bullet02.png);
+	background-size: 100%100%;
+}
+/* 功能按键 */
+.func{
+	width:60px;
+	height:30px;
+	background-color: rgba();
+	position: absolute;
+	font-size: 12px;
+	margin: 10px;
+	text-align: center;
+	z-index: 1000;
+	cursor: pointer;
+}
+/* 游戏说明 */
+.gamedesc{
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	/* border: 1px solid white; */
+	text-align: center;
+	left: calc(50% - 200px);
+	top:calc(40% - 100px);
+	z-index: 999;
+}
+.gamedesc input{
+	background-color: #00000000;
+	border-width: 0;
+	border-bottom: 1px solid white;
+	color: white;
+}
+/* 游戏排行榜 */
+.gamesort{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	/* border: 1px solid white; */
+	text-align: center;
+	left: calc(50% - 200px);
+	top:calc(40% - 100px);
+	z-index: 999;
+	background-color: #00000060;
+	display: none;
+}
+.gamesort table{
+	/* border: 1px solid black; */
+	border-collapse: collapse;
+	width: 100%;
+	
+}
+.gamesort table td{
+	padding: 5px;
+	/* border: 1px solid black; */
+}
+
