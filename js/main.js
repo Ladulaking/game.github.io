@@ -134,7 +134,7 @@ $(function(){ //使用jquery库
 			else if($(enemys[i]).attr("class")=="enemy enemy4")
 				$(enemys[i]).css("top",parseFloat($(enemys[i]).css("top"))+7);
 		}
-	},100)
+	},50)
 	//产生敌机
 	setInterval(function(){
 		var num=parseInt(Math.random()*4)+1;
@@ -142,7 +142,7 @@ $(function(){ //使用jquery库
 		var rndleft = parseInt(Math.random()*$(stage).width()-enemyWs[num-1]);
 		rndleft = rndleft<0?0:rndleft;
 		$("<div class=\"enemy enemy"+num+"\"></div>").css({"left":rndleft}).appendTo($("#stage"));
-	},5500);
+	},500);
 	//离开舞台的飞机移除DOM节点
 	setInterval(function(){
 		for(var i=0; i<enemys.length;i++){
